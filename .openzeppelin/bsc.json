@@ -1,0 +1,3584 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x4bb0584220Dab2e4Df65b2d3700170d8Fd3E577C",
+    "txHash": "0xcadf07e74fd94edee504847c8dd4e91f43c71a6c014d7642c2295c511d394501"
+  },
+  "proxies": [
+    {
+      "address": "0x1500B2dec4712f60D27D500A731a6686Adbf9958",
+      "txHash": "0x07725b2915e3187154ab54ff15968ead9f57a64287764003a290facaf701efbd",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "500c67bdbc56d23bf538aed643d36abeea364c028c11c324af2f5fe829e34964": {
+      "address": "0x937e9bBAB2e36095b94978589D6e569B35bE90fB",
+      "txHash": "0x030ad02e793232a7017eecf19ae11cd1b03c4560e28d2d89e33b0aec6fe5a4f8",
+      "layout": {
+        "solcVersion": "0.8.19",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "dev",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:23"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:90"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "usdc",
+            "type": "t_contract(IERC20MetadataUpgradeable)414",
+            "src": "..\\project:\\contracts\\WC2.sol:102"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "wolfV1",
+            "type": "t_contract(IWolf)854",
+            "src": "..\\project:\\contracts\\WC2.sol:103"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "ownerWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC2.sol:104"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "marketingWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC2.sol:105"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "developmentWallet1",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC2.sol:106"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "developmentWallet2",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC2.sol:107"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "multiSigWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC2.sol:108"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "totalStaked",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:110"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "totalWithdrawan",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:111"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "totalRefRewards",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:112"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "uniqueStakers",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:113"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "topDepositThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:114"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "topTeamThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:115"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "lotteryPool",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:116"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "uniqueTeamId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:117"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "currentWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:118"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "launchTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:119"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "haltAccStartTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:120"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "haltAccEndTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:121"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "haltDeposits",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC2.sol:122"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "haltWithdraws",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC2.sol:123"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "haltAccumulation",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC2.sol:124"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "launched",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC2.sol:125"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "basePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:127"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "teamPercentMultiplier",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:128"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "ownerFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:129"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "marketingFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:130"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "dev1FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:131"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "dev2FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:132"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "lotteryFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:133"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "lotteryPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:134"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "referrerPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:135"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "referralPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:136"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "percentDivider",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:137"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "minDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:138"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "maxDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:139"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "timeStep",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:140"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "claimDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:141"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "accumulationDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:142"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "lockDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC2.sol:143"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "requiredTeamUsers",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC2.sol:145"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "requiredTeamAmount",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC2.sol:146"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)981_storage)",
+            "src": "..\\project:\\contracts\\WC2.sol:179"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "teams",
+            "type": "t_mapping(t_uint256,t_struct(TeamData)1003_storage)",
+            "src": "..\\project:\\contracts\\WC2.sol:180"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "userStakes",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)962_storage))",
+            "src": "..\\project:\\contracts\\WC2.sol:181"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "isLotteryClaimed",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+            "src": "..\\project:\\contracts\\WC2.sol:182"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "winnersHistory",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "src": "..\\project:\\contracts\\WC2.sol:183"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "isUserMigrated",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\WC2.sol:184"
+          },
+          {
+            "contract": "WolfCapital",
+            "label": "isTeamMigrated",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "..\\project:\\contracts\\WC2.sol:185"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20MetadataUpgradeable)414": {
+            "label": "contract IERC20MetadataUpgradeable"
+          },
+          "t_contract(IWolf)854": {
+            "label": "contract IWolf"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)10_storage": {
+            "label": "uint256[10]"
+          },
+          "t_mapping(t_address,t_struct(User)981_storage)": {
+            "label": "mapping(address => struct WolfCapital.User)"
+          },
+          "t_struct(User)981_storage": {
+            "label": "struct WolfCapital.User",
+            "members": [
+              {
+                "label": "isExists",
+                "type": "t_bool"
+              },
+              {
+                "label": "referrer",
+                "type": "t_address"
+              },
+              {
+                "label": "referrals",
+                "type": "t_uint256"
+              },
+              {
+                "label": "referralRewards",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakeCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalWithdrawan",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_struct(TeamData)1003_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital.TeamData)"
+          },
+          "t_struct(TeamData)1003_storage": {
+            "label": "struct WolfCapital.TeamData",
+            "members": [
+              {
+                "label": "Lead",
+                "type": "t_address"
+              },
+              {
+                "label": "teamName",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "teamCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentPercent",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamMembers",
+                "type": "t_array(t_address)dyn_storage"
+              },
+              {
+                "label": "lotteryAmount",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "weeklyDeposits",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              }
+            ]
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)962_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct WolfCapital.StakeData))"
+          },
+          "t_mapping(t_uint256,t_struct(StakeData)962_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital.StakeData)"
+          },
+          "t_struct(StakeData)962_storage": {
+            "label": "struct WolfCapital.StakeData",
+            "members": [
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "checkpoint",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimedReward",
+                "type": "t_uint256"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(address => mapping(uint256 => bool))"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    },
+    "eb335c64ab4ee804bd4b8de1ad1a7f808f6b025d55d8e6925e0d997c20208b64": {
+      "address": "0x09a92a4F219E62a77DeD54c897C365aB15Cd9fb6",
+      "txHash": "0xee27dfcdb00c8074977037c6e7ef48a751aa4b733881640bd053c66a12f49928",
+      "layout": {
+        "solcVersion": "0.8.19",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "dev",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:23"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:90"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "usdc",
+            "type": "t_contract(IERC20MetadataUpgradeable)414",
+            "src": "..\\project:\\contracts\\WC3.sol:102"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "wolfV1",
+            "type": "t_contract(IWolf)3740",
+            "src": "..\\project:\\contracts\\WC3.sol:103"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "ownerWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC3.sol:104"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "marketingWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC3.sol:105"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "developmentWallet1",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC3.sol:106"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "developmentWallet2",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC3.sol:107"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "multiSigWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC3.sol:108"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "totalStaked",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:110"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "totalWithdrawan",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:111"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "totalRefRewards",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:112"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "uniqueStakers",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:113"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "topDepositThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:114"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "topTeamThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:115"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "lotteryPool",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:116"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "uniqueTeamId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:117"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "currentWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:118"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "launchTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:119"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "haltAccStartTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:120"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "haltAccEndTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:121"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "haltDeposits",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC3.sol:122"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "haltWithdraws",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC3.sol:123"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "haltAccumulation",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC3.sol:124"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "launched",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC3.sol:125"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "basePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:127"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "teamPercentMultiplier",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:128"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "ownerFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:129"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "marketingFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:130"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "dev1FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:131"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "dev2FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:132"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "lotteryFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:133"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "lotteryPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:134"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "referrerPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:135"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "referralPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:136"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "percentDivider",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:137"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "minDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:138"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "maxDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:139"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "timeStep",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:140"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "claimDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:141"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "accumulationDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:142"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "lockDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC3.sol:143"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "requiredTeamUsers",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC3.sol:145"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "requiredTeamAmount",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC3.sol:146"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)3867_storage)",
+            "src": "..\\project:\\contracts\\WC3.sol:179"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "teams",
+            "type": "t_mapping(t_uint256,t_struct(TeamData)3889_storage)",
+            "src": "..\\project:\\contracts\\WC3.sol:180"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "userStakes",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)3848_storage))",
+            "src": "..\\project:\\contracts\\WC3.sol:181"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "isLotteryClaimed",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+            "src": "..\\project:\\contracts\\WC3.sol:182"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "winnersHistory",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "src": "..\\project:\\contracts\\WC3.sol:183"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "isUserMigrated",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\WC3.sol:184"
+          },
+          {
+            "contract": "WolfCapital2",
+            "label": "isTeamMigrated",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "..\\project:\\contracts\\WC3.sol:185"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20MetadataUpgradeable)414": {
+            "label": "contract IERC20MetadataUpgradeable"
+          },
+          "t_contract(IWolf)3740": {
+            "label": "contract IWolf"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)10_storage": {
+            "label": "uint256[10]"
+          },
+          "t_mapping(t_address,t_struct(User)3867_storage)": {
+            "label": "mapping(address => struct WolfCapital2.User)"
+          },
+          "t_struct(User)3867_storage": {
+            "label": "struct WolfCapital2.User",
+            "members": [
+              {
+                "label": "isExists",
+                "type": "t_bool"
+              },
+              {
+                "label": "referrer",
+                "type": "t_address"
+              },
+              {
+                "label": "referrals",
+                "type": "t_uint256"
+              },
+              {
+                "label": "referralRewards",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakeCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalWithdrawan",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_struct(TeamData)3889_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital2.TeamData)"
+          },
+          "t_struct(TeamData)3889_storage": {
+            "label": "struct WolfCapital2.TeamData",
+            "members": [
+              {
+                "label": "Lead",
+                "type": "t_address"
+              },
+              {
+                "label": "teamName",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "teamCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentPercent",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamMembers",
+                "type": "t_array(t_address)dyn_storage"
+              },
+              {
+                "label": "lotteryAmount",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "weeklyDeposits",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              }
+            ]
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)3848_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct WolfCapital2.StakeData))"
+          },
+          "t_mapping(t_uint256,t_struct(StakeData)3848_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital2.StakeData)"
+          },
+          "t_struct(StakeData)3848_storage": {
+            "label": "struct WolfCapital2.StakeData",
+            "members": [
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "checkpoint",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimedReward",
+                "type": "t_uint256"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(address => mapping(uint256 => bool))"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    },
+    "12998f2d6540aa2327bf035da4ac4bd24244babfd0f533d222c8403657b8f17a": {
+      "address": "0xBb17c6f59C5F723e32Abdf814Ff04896fbf60bbE",
+      "txHash": "0x131bda0dd6392b3273a80c39e682fd653c3d212ec8eb5fa233e920ce84d94027",
+      "layout": {
+        "solcVersion": "0.8.19",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "dev",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:23"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:90"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "usdc",
+            "type": "t_contract(IERC20MetadataUpgradeable)414",
+            "src": "..\\project:\\contracts\\WC4.sol:102"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "wolfV1",
+            "type": "t_contract(IWolf)6666",
+            "src": "..\\project:\\contracts\\WC4.sol:103"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "ownerWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC4.sol:104"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "marketingWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC4.sol:105"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "developmentWallet1",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC4.sol:106"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "developmentWallet2",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC4.sol:107"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "multiSigWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC4.sol:108"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "totalStaked",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:110"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "totalWithdrawan",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:111"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "totalRefRewards",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:112"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "uniqueStakers",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:113"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "topDepositThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:114"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "topTeamThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:115"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "lotteryPool",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:116"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "uniqueTeamId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:117"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "currentWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:118"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "launchTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:119"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "haltAccStartTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:120"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "haltAccEndTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:121"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "haltDeposits",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC4.sol:122"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "haltWithdraws",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC4.sol:123"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "haltAccumulation",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC4.sol:124"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "launched",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC4.sol:125"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "basePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:127"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "teamPercentMultiplier",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:128"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "ownerFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:129"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "marketingFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:130"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "dev1FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:131"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "dev2FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:132"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "lotteryFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:133"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "lotteryPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:134"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "referrerPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:135"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "referralPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:136"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "percentDivider",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:137"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "minDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:138"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "maxDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:139"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "timeStep",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:140"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "claimDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:141"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "accumulationDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:142"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "lockDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC4.sol:143"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "requiredTeamUsers",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC4.sol:145"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "requiredTeamAmount",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC4.sol:146"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)6793_storage)",
+            "src": "..\\project:\\contracts\\WC4.sol:179"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "teams",
+            "type": "t_mapping(t_uint256,t_struct(TeamData)6815_storage)",
+            "src": "..\\project:\\contracts\\WC4.sol:180"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "userStakes",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)6774_storage))",
+            "src": "..\\project:\\contracts\\WC4.sol:181"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "isLotteryClaimed",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+            "src": "..\\project:\\contracts\\WC4.sol:182"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "winnersHistory",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "src": "..\\project:\\contracts\\WC4.sol:183"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "isUserMigrated",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\WC4.sol:184"
+          },
+          {
+            "contract": "WolfCapital3",
+            "label": "isTeamMigrated",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "..\\project:\\contracts\\WC4.sol:185"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20MetadataUpgradeable)414": {
+            "label": "contract IERC20MetadataUpgradeable"
+          },
+          "t_contract(IWolf)6666": {
+            "label": "contract IWolf"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)10_storage": {
+            "label": "uint256[10]"
+          },
+          "t_mapping(t_address,t_struct(User)6793_storage)": {
+            "label": "mapping(address => struct WolfCapital3.User)"
+          },
+          "t_struct(User)6793_storage": {
+            "label": "struct WolfCapital3.User",
+            "members": [
+              {
+                "label": "isExists",
+                "type": "t_bool"
+              },
+              {
+                "label": "referrer",
+                "type": "t_address"
+              },
+              {
+                "label": "referrals",
+                "type": "t_uint256"
+              },
+              {
+                "label": "referralRewards",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakeCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalWithdrawan",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_struct(TeamData)6815_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital3.TeamData)"
+          },
+          "t_struct(TeamData)6815_storage": {
+            "label": "struct WolfCapital3.TeamData",
+            "members": [
+              {
+                "label": "Lead",
+                "type": "t_address"
+              },
+              {
+                "label": "teamName",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "teamCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentPercent",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamMembers",
+                "type": "t_array(t_address)dyn_storage"
+              },
+              {
+                "label": "lotteryAmount",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "weeklyDeposits",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              }
+            ]
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)6774_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct WolfCapital3.StakeData))"
+          },
+          "t_mapping(t_uint256,t_struct(StakeData)6774_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital3.StakeData)"
+          },
+          "t_struct(StakeData)6774_storage": {
+            "label": "struct WolfCapital3.StakeData",
+            "members": [
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "checkpoint",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimedReward",
+                "type": "t_uint256"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(address => mapping(uint256 => bool))"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    },
+    "ae93893606d03414976d168f107b653be830242f0a8ce9aba3f02939811fc61f": {
+      "address": "0xB89c916D86b8eF2f143e6C8eaE2115726F53D496",
+      "txHash": "0xfbf6ab8be33de8e3821fc7dc6339bdabc5b5fdf00a06a177e66021c9de955362",
+      "layout": {
+        "solcVersion": "0.8.19",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "dev",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:23"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:90"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "usdc",
+            "type": "t_contract(IERC20MetadataUpgradeable)414",
+            "src": "..\\project:\\contracts\\WC5.sol:102"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "wolfV1",
+            "type": "t_contract(IWolf)9622",
+            "src": "..\\project:\\contracts\\WC5.sol:103"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "ownerWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC5.sol:104"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "marketingWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC5.sol:105"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "developmentWallet1",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC5.sol:106"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "developmentWallet2",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC5.sol:107"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "multiSigWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC5.sol:108"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "totalStaked",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:110"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "totalWithdrawan",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:111"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "totalRefRewards",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:112"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "uniqueStakers",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:113"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "topDepositThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:114"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "topTeamThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:115"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "lotteryPool",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:116"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "uniqueTeamId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:117"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "currentWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:118"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "launchTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:119"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "haltAccStartTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:120"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "haltAccEndTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:121"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "haltDeposits",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC5.sol:122"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "haltWithdraws",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC5.sol:123"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "haltAccumulation",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC5.sol:124"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "launched",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC5.sol:125"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "basePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:127"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "teamPercentMultiplier",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:128"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "ownerFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:129"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "marketingFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:130"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "dev1FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:131"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "dev2FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:132"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "lotteryFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:133"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "lotteryPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:134"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "referrerPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:135"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "referralPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:136"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "percentDivider",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:137"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "minDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:138"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "maxDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:139"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "timeStep",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:140"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "claimDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:141"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "accumulationDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:142"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "lockDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC5.sol:143"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "requiredTeamUsers",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC5.sol:145"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "requiredTeamAmount",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC5.sol:146"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)9749_storage)",
+            "src": "..\\project:\\contracts\\WC5.sol:179"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "teams",
+            "type": "t_mapping(t_uint256,t_struct(TeamData)9771_storage)",
+            "src": "..\\project:\\contracts\\WC5.sol:180"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "userStakes",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)9730_storage))",
+            "src": "..\\project:\\contracts\\WC5.sol:181"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "isLotteryClaimed",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+            "src": "..\\project:\\contracts\\WC5.sol:182"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "winnersHistory",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "src": "..\\project:\\contracts\\WC5.sol:183"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "isUserMigrated",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\WC5.sol:184"
+          },
+          {
+            "contract": "WolfCapital4",
+            "label": "isTeamMigrated",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "..\\project:\\contracts\\WC5.sol:185"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20MetadataUpgradeable)414": {
+            "label": "contract IERC20MetadataUpgradeable"
+          },
+          "t_contract(IWolf)9622": {
+            "label": "contract IWolf"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)10_storage": {
+            "label": "uint256[10]"
+          },
+          "t_mapping(t_address,t_struct(User)9749_storage)": {
+            "label": "mapping(address => struct WolfCapital4.User)"
+          },
+          "t_struct(User)9749_storage": {
+            "label": "struct WolfCapital4.User",
+            "members": [
+              {
+                "label": "isExists",
+                "type": "t_bool"
+              },
+              {
+                "label": "referrer",
+                "type": "t_address"
+              },
+              {
+                "label": "referrals",
+                "type": "t_uint256"
+              },
+              {
+                "label": "referralRewards",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakeCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalWithdrawan",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_struct(TeamData)9771_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital4.TeamData)"
+          },
+          "t_struct(TeamData)9771_storage": {
+            "label": "struct WolfCapital4.TeamData",
+            "members": [
+              {
+                "label": "Lead",
+                "type": "t_address"
+              },
+              {
+                "label": "teamName",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "teamCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentPercent",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamMembers",
+                "type": "t_array(t_address)dyn_storage"
+              },
+              {
+                "label": "lotteryAmount",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "weeklyDeposits",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              }
+            ]
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)9730_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct WolfCapital4.StakeData))"
+          },
+          "t_mapping(t_uint256,t_struct(StakeData)9730_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital4.StakeData)"
+          },
+          "t_struct(StakeData)9730_storage": {
+            "label": "struct WolfCapital4.StakeData",
+            "members": [
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "checkpoint",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimedReward",
+                "type": "t_uint256"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(address => mapping(uint256 => bool))"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    },
+    "bc5dce46ec7d5213791ff8139add0dfd74259a966b3a88cc7ed155452fe6205a": {
+      "address": "0x85F185bEB2aAd5C241EB545DE442200e95160Eec",
+      "txHash": "0x65b50b31407b22ee1c991c57009b72c48f408bd99f31d52bc229ffe03e82ddbf",
+      "layout": {
+        "solcVersion": "0.8.19",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "dev",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:23"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:90"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "usdc",
+            "type": "t_contract(IERC20MetadataUpgradeable)414",
+            "src": "..\\project:\\contracts\\WC6.sol:102"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "wolfV1",
+            "type": "t_contract(IWolf)12758",
+            "src": "..\\project:\\contracts\\WC6.sol:103"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "ownerWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC6.sol:104"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "marketingWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC6.sol:105"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "developmentWallet1",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC6.sol:106"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "developmentWallet2",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC6.sol:107"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "multiSigWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC6.sol:108"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "totalStaked",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:110"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "totalWithdrawan",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:111"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "totalRefRewards",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:112"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "uniqueStakers",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:113"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "topDepositThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:114"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "topTeamThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:115"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "lotteryPool",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:116"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "uniqueTeamId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:117"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "currentWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:118"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "launchTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:119"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "haltAccStartTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:120"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "haltAccEndTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:121"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "haltDeposits",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC6.sol:122"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "haltWithdraws",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC6.sol:123"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "haltAccumulation",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC6.sol:124"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "launched",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC6.sol:125"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "basePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:127"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "teamPercentMultiplier",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:128"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "ownerFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:129"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "marketingFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:130"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "dev1FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:131"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "dev2FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:132"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "lotteryFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:133"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "lotteryPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:134"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "referrerPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:135"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "referralPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:136"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "percentDivider",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:137"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "minDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:138"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "maxDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:139"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "timeStep",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:140"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "claimDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:141"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "accumulationDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:142"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "lockDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC6.sol:143"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "requiredTeamUsers",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC6.sol:145"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "requiredTeamAmount",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC6.sol:146"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)12885_storage)",
+            "src": "..\\project:\\contracts\\WC6.sol:179"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "teams",
+            "type": "t_mapping(t_uint256,t_struct(TeamData)12907_storage)",
+            "src": "..\\project:\\contracts\\WC6.sol:180"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "userStakes",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)12866_storage))",
+            "src": "..\\project:\\contracts\\WC6.sol:181"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "isLotteryClaimed",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+            "src": "..\\project:\\contracts\\WC6.sol:182"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "winnersHistory",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "src": "..\\project:\\contracts\\WC6.sol:183"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "isUserMigrated",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\WC6.sol:184"
+          },
+          {
+            "contract": "WolfCapital5",
+            "label": "isTeamMigrated",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "..\\project:\\contracts\\WC6.sol:185"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20MetadataUpgradeable)414": {
+            "label": "contract IERC20MetadataUpgradeable"
+          },
+          "t_contract(IWolf)12758": {
+            "label": "contract IWolf"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)10_storage": {
+            "label": "uint256[10]"
+          },
+          "t_mapping(t_address,t_struct(User)12885_storage)": {
+            "label": "mapping(address => struct WolfCapital5.User)"
+          },
+          "t_struct(User)12885_storage": {
+            "label": "struct WolfCapital5.User",
+            "members": [
+              {
+                "label": "isExists",
+                "type": "t_bool"
+              },
+              {
+                "label": "referrer",
+                "type": "t_address"
+              },
+              {
+                "label": "referrals",
+                "type": "t_uint256"
+              },
+              {
+                "label": "referralRewards",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakeCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalWithdrawan",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_struct(TeamData)12907_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital5.TeamData)"
+          },
+          "t_struct(TeamData)12907_storage": {
+            "label": "struct WolfCapital5.TeamData",
+            "members": [
+              {
+                "label": "Lead",
+                "type": "t_address"
+              },
+              {
+                "label": "teamName",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "teamCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentPercent",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamMembers",
+                "type": "t_array(t_address)dyn_storage"
+              },
+              {
+                "label": "lotteryAmount",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "weeklyDeposits",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              }
+            ]
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)12866_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct WolfCapital5.StakeData))"
+          },
+          "t_mapping(t_uint256,t_struct(StakeData)12866_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital5.StakeData)"
+          },
+          "t_struct(StakeData)12866_storage": {
+            "label": "struct WolfCapital5.StakeData",
+            "members": [
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "checkpoint",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimedReward",
+                "type": "t_uint256"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(address => mapping(uint256 => bool))"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    },
+    "439a14cf565dd5a82546f28acc1ff56e6249543aa59b93598ec64543a65ef60b": {
+      "address": "0x05F2b19b5892A3B25c117A307fC97986Edc0ab0A",
+      "txHash": "0x626dddbf178f7d242dc2a82d10db911744451d88104d02d4f1487b0b1a2d4623",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "dev",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:23"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:90"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "usdc",
+            "type": "t_contract(IERC20MetadataUpgradeable)414",
+            "src": "..\\project:\\contracts\\WC7.sol:102"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "wolfV1",
+            "type": "t_contract(IWolf)15916",
+            "src": "..\\project:\\contracts\\WC7.sol:103"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "ownerWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC7.sol:104"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "marketingWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC7.sol:105"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "developmentWallet1",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC7.sol:106"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "developmentWallet2",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC7.sol:107"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "multiSigWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC7.sol:108"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "totalStaked",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:110"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "totalWithdrawan",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:111"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "totalRefRewards",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:112"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "uniqueStakers",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:113"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "topDepositThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:114"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "topTeamThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:115"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "lotteryPool",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:116"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "uniqueTeamId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:117"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "currentWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:118"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "launchTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:119"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "haltAccStartTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:120"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "haltAccEndTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:121"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "haltDeposits",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC7.sol:122"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "haltWithdraws",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC7.sol:123"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "haltAccumulation",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC7.sol:124"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "launched",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC7.sol:125"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "basePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:127"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "teamPercentMultiplier",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:128"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "ownerFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:129"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "marketingFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:130"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "dev1FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:131"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "dev2FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:132"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "lotteryFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:133"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "lotteryPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:134"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "referrerPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:135"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "referralPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:136"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "percentDivider",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:137"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "minDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:138"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "maxDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:139"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "timeStep",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:140"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "claimDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:141"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "accumulationDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:142"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "lockDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:143"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "requiredTeamUsers",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC7.sol:177"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "requiredTeamAmount",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC7.sol:178"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)16159_storage)",
+            "src": "..\\project:\\contracts\\WC7.sol:211"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "teams",
+            "type": "t_mapping(t_uint256,t_struct(TeamData)16181_storage)",
+            "src": "..\\project:\\contracts\\WC7.sol:212"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "userStakes",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)16140_storage))",
+            "src": "..\\project:\\contracts\\WC7.sol:213"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "isLotteryClaimed",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+            "src": "..\\project:\\contracts\\WC7.sol:214"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "winnersHistory",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "src": "..\\project:\\contracts\\WC7.sol:215"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "isUserMigrated",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\WC7.sol:216"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "isTeamMigrated",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "..\\project:\\contracts\\WC7.sol:217"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "currentStaked",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:228"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "developmentWallet3",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC7.sol:229"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "dev3FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC7.sol:230"
+          },
+          {
+            "contract": "WolfCapital6",
+            "label": "weeklyDeposits",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_uint256))",
+            "src": "..\\project:\\contracts\\WC7.sol:231"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20MetadataUpgradeable)414": {
+            "label": "contract IERC20MetadataUpgradeable"
+          },
+          "t_contract(IWolf)15916": {
+            "label": "contract IWolf"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)10_storage": {
+            "label": "uint256[10]"
+          },
+          "t_mapping(t_address,t_struct(User)16159_storage)": {
+            "label": "mapping(address => struct WolfCapital6.User)"
+          },
+          "t_struct(User)16159_storage": {
+            "label": "struct WolfCapital6.User",
+            "members": [
+              {
+                "label": "isExists",
+                "type": "t_bool"
+              },
+              {
+                "label": "referrer",
+                "type": "t_address"
+              },
+              {
+                "label": "referrals",
+                "type": "t_uint256"
+              },
+              {
+                "label": "referralRewards",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakeCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalWithdrawan",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_struct(TeamData)16181_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital6.TeamData)"
+          },
+          "t_struct(TeamData)16181_storage": {
+            "label": "struct WolfCapital6.TeamData",
+            "members": [
+              {
+                "label": "Lead",
+                "type": "t_address"
+              },
+              {
+                "label": "teamName",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "teamCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentPercent",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamMembers",
+                "type": "t_array(t_address)dyn_storage"
+              },
+              {
+                "label": "lotteryAmount",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "weeklyDeposits",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              }
+            ]
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)16140_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct WolfCapital6.StakeData))"
+          },
+          "t_mapping(t_uint256,t_struct(StakeData)16140_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital6.StakeData)"
+          },
+          "t_struct(StakeData)16140_storage": {
+            "label": "struct WolfCapital6.StakeData",
+            "members": [
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "checkpoint",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimedReward",
+                "type": "t_uint256"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(address => mapping(uint256 => bool))"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_uint256))": {
+            "label": "mapping(address => mapping(uint256 => uint256))"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    },
+    "e7107a447212e0cdf9d4061d185a46f5f9f5d1c61e7670054e3bf67d9750e960": {
+      "address": "0x1b61f18c881F31178b58eEAad6b213C6F92A94D0",
+      "txHash": "0x7eae5a0eb4cff9754682407de419a4a6816b76cf4d663e2915e5d2d448e39e90",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "dev",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:23"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:90"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "usdc",
+            "type": "t_contract(IERC20MetadataUpgradeable)414",
+            "src": "..\\project:\\contracts\\WC8.sol:102"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "wolfV1",
+            "type": "t_contract(IWolf)18844",
+            "src": "..\\project:\\contracts\\WC8.sol:103"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "ownerWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC8.sol:104"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "marketingWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC8.sol:105"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "developmentWallet1",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC8.sol:106"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "developmentWallet2",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC8.sol:107"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "multiSigWallet",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC8.sol:108"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "totalStaked",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:110"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "totalWithdrawan",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:111"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "totalRefRewards",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:112"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "uniqueStakers",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:113"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "topDepositThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:114"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "topTeamThisWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:115"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "lotteryPool",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:116"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "uniqueTeamId",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:117"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "currentWeek",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:118"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "launchTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:119"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "haltAccStartTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:120"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "haltAccEndTime",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:121"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "haltDeposits",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC8.sol:122"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "haltWithdraws",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC8.sol:123"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "haltAccumulation",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC8.sol:124"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "launched",
+            "type": "t_bool",
+            "src": "..\\project:\\contracts\\WC8.sol:125"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "basePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:127"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "teamPercentMultiplier",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:128"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "ownerFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:129"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "marketingFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:130"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "dev1FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:131"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "dev2FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:132"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "lotteryFeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:133"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "lotteryPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:134"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "referrerPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:135"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "referralPercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:136"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "percentDivider",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:137"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "minDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:138"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "maxDeposit",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:139"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "timeStep",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:140"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "claimDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:141"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "accumulationDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:142"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "lockDuration",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:143"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "requiredTeamUsers",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC8.sol:179"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "requiredTeamAmount",
+            "type": "t_array(t_uint256)10_storage",
+            "src": "..\\project:\\contracts\\WC8.sol:180"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "users",
+            "type": "t_mapping(t_address,t_struct(User)19093_storage)",
+            "src": "..\\project:\\contracts\\WC8.sol:213"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "teams",
+            "type": "t_mapping(t_uint256,t_struct(TeamData)19115_storage)",
+            "src": "..\\project:\\contracts\\WC8.sol:214"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "userStakes",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)19074_storage))",
+            "src": "..\\project:\\contracts\\WC8.sol:215"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "isLotteryClaimed",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+            "src": "..\\project:\\contracts\\WC8.sol:216"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "winnersHistory",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "src": "..\\project:\\contracts\\WC8.sol:217"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "isUserMigrated",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\WC8.sol:218"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "isTeamMigrated",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "src": "..\\project:\\contracts\\WC8.sol:219"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "currentStaked",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:230"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "developmentWallet3",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\WC8.sol:231"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "dev3FeePercent",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\WC8.sol:232"
+          },
+          {
+            "contract": "WolfCapital7",
+            "label": "weeklyDeposits",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_uint256))",
+            "src": "..\\project:\\contracts\\WC8.sol:233"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20MetadataUpgradeable)414": {
+            "label": "contract IERC20MetadataUpgradeable"
+          },
+          "t_contract(IWolf)18844": {
+            "label": "contract IWolf"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)10_storage": {
+            "label": "uint256[10]"
+          },
+          "t_mapping(t_address,t_struct(User)19093_storage)": {
+            "label": "mapping(address => struct WolfCapital7.User)"
+          },
+          "t_struct(User)19093_storage": {
+            "label": "struct WolfCapital7.User",
+            "members": [
+              {
+                "label": "isExists",
+                "type": "t_bool"
+              },
+              {
+                "label": "referrer",
+                "type": "t_address"
+              },
+              {
+                "label": "referrals",
+                "type": "t_uint256"
+              },
+              {
+                "label": "referralRewards",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakeCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalStaked",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalWithdrawan",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_uint256,t_struct(TeamData)19115_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital7.TeamData)"
+          },
+          "t_struct(TeamData)19115_storage": {
+            "label": "struct WolfCapital7.TeamData",
+            "members": [
+              {
+                "label": "Lead",
+                "type": "t_address"
+              },
+              {
+                "label": "teamName",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "teamCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "currentPercent",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamMembers",
+                "type": "t_array(t_address)dyn_storage"
+              },
+              {
+                "label": "lotteryAmount",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              },
+              {
+                "label": "weeklyDeposits",
+                "type": "t_mapping(t_uint256,t_uint256)"
+              }
+            ]
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(StakeData)19074_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct WolfCapital7.StakeData))"
+          },
+          "t_mapping(t_uint256,t_struct(StakeData)19074_storage)": {
+            "label": "mapping(uint256 => struct WolfCapital7.StakeData)"
+          },
+          "t_struct(StakeData)19074_storage": {
+            "label": "struct WolfCapital7.StakeData",
+            "members": [
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "checkpoint",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimedReward",
+                "type": "t_uint256"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(address => mapping(uint256 => bool))"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_uint256))": {
+            "label": "mapping(address => mapping(uint256 => uint256))"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    }
+  }
+}
